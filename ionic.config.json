@@ -1,0 +1,7 @@
+{
+  "name": "EPQUEST",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
