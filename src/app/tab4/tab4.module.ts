@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
-
+import { ExploreContainerComponentModule } from '../explore-container/explore-container.module';
 import { Tab4PageRoutingModule } from './tab4-routing.module';
 
 import { Tab4Page } from './tab4.page';
@@ -13,8 +13,9 @@ import { Tab4Page } from './tab4.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    Tab4PageRoutingModule
+    Tab4PageRoutingModule,
+    ExploreContainerComponentModule,
   ],
-  declarations: [Tab4Page]
+  declarations: [Tab4Page],
 })
 export class Tab4PageModule {}
