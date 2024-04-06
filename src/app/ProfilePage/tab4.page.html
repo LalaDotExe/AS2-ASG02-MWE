@@ -12,4 +12,68 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content> </ion-content>
+<ion-content>
+  <!-- Profile Logo -->
+  <img class="profile-logo" src="assets/img/EpQuestLogo.png" alt="Ionic logo" />
+  <!-- end logo -->
+  <!-- total ep point card -->
+  <ion-card class="total-ep-card">
+    <ion-card-header>
+      <ion-card-title>Total EP Points</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-row>
+        <ion-col>
+          <ion-text class="total-ep-text">1000</ion-text>
+        </ion-col>
+      </ion-row>
+    </ion-card-content>
+  </ion-card>
+  <!-- end total ep point card -->
+  <!-- profile card -->
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Student ID:</ion-card-title>
+      <ion-card-subtitle>22ftt1499</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-header>
+      <ion-card-title>Full Name:</ion-card-title>
+      <ion-card-subtitle>Dato Akmallala Bin Roslan</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-header>
+      <ion-card-title>Group Code:</ion-card-title>
+      <ion-card-subtitle>DWDT08</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-header>
+      <ion-card-title>Course:</ion-card-title>
+      <ion-card-subtitle>Diploma In Website Development</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-header>
+      <ion-card-title>Email:</ion-card-title>
+      <ion-card-subtitle>Lala02</ion-card-subtitle>
+    </ion-card-header>
+  </ion-card>
+  <!-- end profile card -->
+  <!-- ep record and manage club button in one line -->
+  <ion-row>
+    <ion-col>
+      <ion-button
+        expand="block"
+        fill="outline"
+        color="dark"
+        routerLink="/profile/ep-record"
+        >EP Record</ion-button
+      >
+    </ion-col>
+    <ion-col>
+      <ion-button
+        expand="block"
+        fill="outline"
+        color="dark"
+        routerLink="/profile/manage-club"
+        >Manage Club</ion-button
+      >
+    </ion-col>
+  </ion-row>
+  <!-- end ep record and manage club button in one line -->
+</ion-content>
