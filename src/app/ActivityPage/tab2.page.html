@@ -16,41 +16,17 @@
   <ion-searchbar
     animated="true"
     placeholder="Search clubs or events"
+    [(ngModel)]="searchTerm"
+    (ionChange)="filterClubsAndEvents()"
   ></ion-searchbar>
+
   <!-- end of search bar -->
   <!-- Activity and event card -->
-  <ion-card color="light">
-    <img src="assets/img/PestaConvo.jpg" />
+  <ion-card *ngFor="let clubOrEvent of filteredClubsAndEvents" color="light">
+    <img [src]="clubOrEvent.imageUrl" />
     <ion-card-header>
       <ion-card-title style="text-align: center; color: aliceblue"
-        >Esport Convo Event</ion-card-title
-      >
-    </ion-card-header>
-  </ion-card>
-  <br />
-  <ion-card color="light">
-    <img src="assets/img/EsportClub.jpg" />
-    <ion-card-header>
-      <ion-card-title style="text-align: center; color: aliceblue"
-        >Esport Club</ion-card-title
-      >
-    </ion-card-header>
-  </ion-card>
-  <br />
-  <ion-card color="light">
-    <img src="assets/img/GoldenNight.jpg" />
-    <ion-card-header>
-      <ion-card-title style="text-align: center; color: aliceblue"
-        >Golden Night Event</ion-card-title
-      >
-    </ion-card-header>
-  </ion-card>
-  <br />
-  <ion-card color="light">
-    <img src="assets/img/handball.jpg" />
-    <ion-card-header>
-      <ion-card-title style="text-align: center; color: aliceblue"
-        >Handball Club</ion-card-title
+        >{{ clubOrEvent.name }}</ion-card-title
       >
     </ion-card-header>
   </ion-card>
