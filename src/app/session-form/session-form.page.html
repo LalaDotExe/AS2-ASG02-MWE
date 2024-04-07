@@ -1,13 +1,61 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>SessionForm</ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">SessionForm</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content>
+  <div
+    style="
+      background-image: url(assets/img/frameBG.png);
+      background-size: cover;
+    "
+  >
+    <ion-card
+      style="
+        border-radius: 20px;
+        border: 4px solid black;
+        background-color: #fef9f3;
+      "
+    >
+      <img
+        src="assets/img/handball.jpg"
+        style="border-bottom: 4px solid black"
+      />
+      <ion-card-content>
+        <form>
+          <ion-card-header>
+            <ion-card-title>Student ID</ion-card-title>
+            <ion-card-subtitle>
+              <ion-input
+                name="studentId"
+                ngModel
+                required
+                placeholder="Enter valid student ID"
+              ></ion-input>
+            </ion-card-subtitle>
+          </ion-card-header>
+          <ion-card-header>
+            <ion-card-title>Full Name</ion-card-title>
+            <ion-card-subtitle>
+              <ion-input
+                name="fullName"
+                ngModel
+                required
+                placeholder="Enter full name"
+              ></ion-input>
+            </ion-card-subtitle>
+          </ion-card-header>
+          <ion-card-header>
+            <ion-card-title>Group Code</ion-card-title>
+            <ion-card-subtitle>
+              <ion-input
+                name="groupCode"
+                ngModel
+                required
+                placeholder="Enter group code"
+              ></ion-input>
+            </ion-card-subtitle>
+          </ion-card-header>
+          <ion-button color="tertiary" shape="round" type="submit"
+            >Sign In</ion-button
+          >
+        </form>
+      </ion-card-content>
+    </ion-card>
+  </div>
 </ion-content>
