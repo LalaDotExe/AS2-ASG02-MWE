@@ -45,6 +45,14 @@ const routes: Routes = [
     path: 'handball-club',
     loadChildren: () => import('./handball-club/handball-club.module').then( m => m.HandballClubPageModule)
   },
+  {
+    path: 'join-form',
+    loadChildren: () => import('./join-form/join-form.module').then( m => m.JoinFormPageModule)
+  },
+  {
+    path: 'session-form',
+    loadChildren: () => import('./session-form/session-form.module').then( m => m.SessionFormPageModule)
+  },
 
 ];
 @NgModule({
