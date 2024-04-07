@@ -14,10 +14,11 @@
 <!-- Search bar -->
 <ion-content>
   <ion-searchbar
-    animated="true"
+    animated
     placeholder="Search clubs or events"
     [(ngModel)]="searchTerm"
     (ionChange)="filterClubsAndEvents()"
+    showCancelButton="focus"
   ></ion-searchbar>
 
   <!-- end of search bar -->
