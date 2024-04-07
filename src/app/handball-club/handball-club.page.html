@@ -1,13 +1,105 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>HandballClub</ion-title>
+  <ion-toolbar color="dark" style="height: 70px; padding: 10px">
+    <ion-title style="text-align: center">Handball Club</ion-title>
+    <ion-buttons slot="start" style="margin-right: -40px">
+      <ion-back-button default-href="#"></ion-back-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">HandballClub</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content>
+  <ion-card style="border-radius: 20px; padding: 0; margin: 20px">
+    <img
+      style="width: 100%; height: 250px; object-fit: cover"
+      src="assets/img/handball.jpg"
+    />
+  </ion-card>
+  <!-- Event Description -->
+
+  <ion-card
+    style="border-radius: 20px; padding: 5px; margin: 10px; box-shadow: none"
+  >
+    <ion-card-header>
+      <ion-card-title>Club Description</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-grid>
+        <ion-row
+          style="margin-left: -10px; margin-right: -10px; margin-top: -20px"
+        >
+          <ion-col size="8"
+            ><p>
+              Handball is a team sport in which two teams of seven players each
+              pass a ball using their hands with the aim of throwing it into the
+              goal of the opposing team. A standard match consists of two
+              periods of 30 minutes, and the team that scores more goals wins.
+            </p>
+            <br />
+            <p style="margin-bottom: -20px">Club Managers</p>
+            <br />
+            <p>Awang</p>
+            <p>Steven</p>
+            <p>Lizza</p>
+            <br />
+            <p style="margin-bottom: -20px">Location</p>
+            <br />
+            <p>Berakas Sports</p>
+            <br />
+            <h2>Endorsed For EP!!</h2></ion-col
+          >
+          <ion-col>
+            <img
+              style="
+                width: 100%;
+                height: 120px;
+                object-fit: cover;
+                border-radius: 20px;
+                margin-bottom: 20px;
+              "
+              src="assets/img/hand1.jpg"
+            />
+
+            <img
+              style="
+                width: 100%;
+                height: 120px;
+                object-fit: cover;
+                border-radius: 20px;
+              "
+              src="assets/img/hand2.jpg"
+            />
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+      <ion-grid>
+        <ion-row>
+          <ion-col
+            ><!-- Join Button -->
+            <ion-button
+              expand="block"
+              color="tertiary"
+              shape="round"
+              type="submit"
+              >Joined!</ion-button
+            ></ion-col
+          >
+          <ion-col
+            ><!-- Join Button -->
+            <ion-button
+              expand="block"
+              color="success"
+              shape="round"
+              type="submit"
+              >Session</ion-button
+            ></ion-col
+          >
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+  </ion-card>
 </ion-content>
+
+<!-- footer -->
+<ion-footer>
+  <ion-toolbar color="dark" style="height: 70px"> </ion-toolbar>
+</ion-footer>
