@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { AlertController } from '@ionic/angular';
 
 @Component({
   selector: 'app-feedback',
@@ -9,7 +10,10 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 export class FeedbackPage implements OnInit {
   feedbackForm: FormGroup = new FormGroup({});
 
-  constructor(private fb: FormBuilder) {}
+  constructor(
+    private fb: FormBuilder,
+    private alertController: AlertController
+  ) {}
 
   ngOnInit(): void {
     this.createForm();
@@ -25,10 +29,21 @@ export class FeedbackPage implements OnInit {
   submitForm() {
     if (this.feedbackForm.valid) {
       console.log('Form submitted:', this.feedbackForm.value);
+      this.showThankYouAlert();
       this.feedbackForm.reset();
     } else {
       this.markFormGroupTouched(this.feedbackForm);
     }
+  }
+
+  async showThankYouAlert() {
+    const alert = await this.alertController.create({
+      header: 'Thank You!',
+      message: 'Your feedback has been submitted successfully.',
+      buttons: ['OK'],
+    });
+
+    await alert.present();
   }
 
   markFormGroupTouched(formGroup: FormGroup) {
