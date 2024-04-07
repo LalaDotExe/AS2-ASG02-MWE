@@ -13,26 +13,33 @@
 </ion-header>
 <!-- Search bar -->
 <ion-content>
-  <ion-searchbar
-    animated
-    placeholder="Search clubs or events"
-    [(ngModel)]="searchTerm"
-    (ionChange)="filterClubsAndEvents()"
-    showCancelButton="focus"
-  ></ion-searchbar>
-
-  <!-- end of search bar -->
-  <!-- Activity and event card -->
-  <ion-card
-    *ngFor="let clubOrEvent of filteredClubsAndEvents"
-    color="light"
-    [routerLink]="clubOrEvent.id"
+  <div
+    style="
+      background-image: url(assets/img/frameBG.png);
+      background-size: cover;
+    "
   >
-    <img [src]="clubOrEvent.imageUrl" />
-    <ion-card-header>
-      <ion-card-title style="text-align: center; color: aliceblue"
-        >{{ clubOrEvent.name }}</ion-card-title
-      >
-    </ion-card-header>
-  </ion-card>
+    <ion-searchbar
+      animated
+      placeholder="Search clubs or events"
+      [(ngModel)]="searchTerm"
+      (ionChange)="filterClubsAndEvents()"
+      showCancelButton="focus"
+    ></ion-searchbar>
+
+    <!-- end of search bar -->
+    <!-- Activity and event card -->
+    <ion-card
+      *ngFor="let clubOrEvent of filteredClubsAndEvents"
+      color="light"
+      [routerLink]="clubOrEvent.id"
+    >
+      <img [src]="clubOrEvent.imageUrl" />
+      <ion-card-header>
+        <ion-card-title style="text-align: center; color: aliceblue"
+          >{{ clubOrEvent.name }}</ion-card-title
+        >
+      </ion-card-header>
+    </ion-card>
+  </div>
 </ion-content>

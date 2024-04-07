@@ -13,76 +13,91 @@
 </ion-header>
 
 <ion-content>
-  <!-- Ep Dashboard -->
-  <ion-card color="tertiary" style="border-radius: 20px; padding: 10px">
-    <ion-card-content
-      style="display: flex; align-items: center; justify-content: space-between"
-    >
-      <div style="display: flex; align-items: center">
-        <div
-          style="display: flex; flex-direction: column; align-items: flex-start"
-        >
-          <ion-card-title> 140 EP </ion-card-title>
-          <ion-button color="warning" routerLink="/tabs/tab2"
-            >Start Quest</ion-button
+  <div
+    style="
+      background-image: url(assets/img/frameBG.png);
+      background-size: cover;
+    "
+  >
+    <!-- Ep Dashboard -->
+    <ion-card color="tertiary" style="border-radius: 20px; padding: 10px">
+      <ion-card-content
+        style="
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        "
+      >
+        <div style="display: flex; align-items: center">
+          <div
+            style="
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+            "
           >
+            <ion-card-title> 140 EP </ion-card-title>
+            <ion-button color="warning" routerLink="/tabs/tab2"
+              >Start Quest</ion-button
+            >
+          </div>
         </div>
-      </div>
-      <img
-        src="assets/img/monitoring.png"
-        style="width: 150px; height: 150px"
-      />
-    </ion-card-content>
-  </ion-card>
-  <!-- end of dashboard -->
-  <!-- Event Card -->
-  <div
-    style="
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: -10px;
-    "
-  >
-    <h3>Events</h3>
-    <a routerLink="/tabs/tab2" style="color: orange; padding: 0 10px"
-      >View All Events ></a
+        <img
+          src="assets/img/monitoring.png"
+          style="width: 150px; height: 150px"
+        />
+      </ion-card-content>
+    </ion-card>
+    <!-- end of dashboard -->
+    <!-- Event Card -->
+    <div
+      style="
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: -10px;
+      "
     >
-  </div>
-  <ion-grid>
-    <ion-row>
-      <ion-col>
-        <img class="eventpic" src="assets/img/thumbnail_Image.jpg" />
-      </ion-col>
-      <ion-col>
-        <img class="eventpic" src="assets/img/PestaConvo.jpg" />
-      </ion-col>
-    </ion-row>
-  </ion-grid>
-  <!-- End -->
-  <!-- Activity Card -->
-  <div
-    style="
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-top: -20px;
-    "
-  >
-    <h3>Activity</h3>
-    <a routerLink="/tabs/tab2" style="color: orange; padding: 0 10px"
-      >View All Activity ></a
+      <h3>Events</h3>
+      <a routerLink="/tabs/tab2" style="color: orange; padding: 0 10px"
+        >View All Events ></a
+      >
+    </div>
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <img class="eventpic" src="assets/img/thumbnail_Image.jpg" />
+        </ion-col>
+        <ion-col>
+          <img class="eventpic" src="assets/img/PestaConvo.jpg" />
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <!-- End -->
+    <!-- Activity Card -->
+    <div
+      style="
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: -20px;
+      "
     >
-  </div>
-  <div
-    style="
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 0 10px;
-      margin-bottom: 20px;
-    "
-  >
-    <img id="clubpic" style="height: 260px" src="assets/img/EsportClub.jpg" />
+      <h3>Activity</h3>
+      <a routerLink="/tabs/tab2" style="color: orange; padding: 0 10px"
+        >View All Activity ></a
+      >
+    </div>
+    <div
+      style="
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 10px;
+        margin-bottom: 20px;
+      "
+    >
+      <img id="clubpic" style="height: 260px" src="assets/img/EsportClub.jpg" />
+    </div>
   </div>
 </ion-content>
