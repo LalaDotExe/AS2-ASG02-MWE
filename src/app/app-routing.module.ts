@@ -29,6 +29,22 @@ const routes: Routes = [
     path: 'manage-club',
     loadChildren: () => import('./manage-club/manage-club.module').then( m => m.ManageClubPageModule)
   },
+  {
+    path: 'esport-event',
+    loadChildren: () => import('./esport-event/esport-event.module').then( m => m.EsportEventPageModule)
+  },
+  {
+    path: 'esport-club',
+    loadChildren: () => import('./esport-club/esport-club.module').then( m => m.EsportClubPageModule)
+  },
+  {
+    path: 'golden-event',
+    loadChildren: () => import('./golden-event/golden-event.module').then( m => m.GoldenEventPageModule)
+  },
+  {
+    path: 'handball-club',
+    loadChildren: () => import('./handball-club/handball-club.module').then( m => m.HandballClubPageModule)
+  },
 
 ];
 @NgModule({
