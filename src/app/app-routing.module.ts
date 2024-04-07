@@ -21,7 +21,15 @@ const routes: Routes = [
     path: 'aboutus',
     loadChildren: () =>
       import('./aboutus/aboutus.module').then((m) => m.AboutusPageModule),
+  },  {
+    path: 'ep-record',
+    loadChildren: () => import('./ep-record/ep-record.module').then( m => m.EpRecordPageModule)
   },
+  {
+    path: 'manage-club',
+    loadChildren: () => import('./manage-club/manage-club.module').then( m => m.ManageClubPageModule)
+  },
+
 ];
 @NgModule({
   imports: [
