@@ -9,10 +9,26 @@ export class Tab2Page {
   searchTerm: string = '';
 
   clubsAndEvents = [
-    { name: 'Esport Convo Event', imageUrl: 'assets/img/PestaConvo.jpg' },
-    { name: 'Esport Club', imageUrl: 'assets/img/EsportClub.jpg' },
-    { name: 'Golden Night Event', imageUrl: 'assets/img/GoldenNight.jpg' },
-    { name: 'Handball Club', imageUrl: 'assets/img/handball.jpg' },
+    {
+      name: 'Esport Convo Event',
+      imageUrl: 'assets/img/PestaConvo.jpg',
+      id: '/esport-event',
+    },
+    {
+      name: 'Esport Club',
+      imageUrl: 'assets/img/EsportClub.jpg',
+      id: '/esport-club',
+    },
+    {
+      name: 'Golden Night Event',
+      imageUrl: 'assets/img/GoldenNight.jpg',
+      id: '/golden-event',
+    },
+    {
+      name: 'Handball Club',
+      imageUrl: 'assets/img/handball.jpg',
+      id: '/handball-club',
+    },
   ];
 
   filteredClubsAndEvents = this.clubsAndEvents;
