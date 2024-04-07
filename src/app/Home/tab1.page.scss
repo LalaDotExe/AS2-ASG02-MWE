@@ -19,11 +19,19 @@ ion-col {
     padding: 0 10px;
   }
 
-// image I want side by side and same size
-img{
+.eventpic{
   width: 100%;
-  height: 90%;
+  height: 200px;
   border-radius: 20px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+#clubpic{
+  width: 100%;
+  height: 200px;
+  border-radius: 20px;
+  object-fit: cover;
 }
  
 a{

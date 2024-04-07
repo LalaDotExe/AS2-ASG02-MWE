@@ -14,7 +14,10 @@
 
 <ion-content>
   <!-- Ep Dashboard -->
-  <ion-card color="tertiary" style="border-radius: 20px">
+  <ion-card
+    color="tertiary"
+    style="border-radius: 20px; padding: 10px; margin-top: 20px"
+  >
     <ion-card-header>
       <ion-card-title> 140 EP </ion-card-title>
     </ion-card-header>
@@ -42,13 +45,10 @@
   <ion-grid>
     <ion-row>
       <ion-col>
-        <img
-          alt="Silhouette of mountains"
-          src="assets/img/thumbnail_Image.jpg"
-        />
+        <img class="eventpic" src="assets/img/thumbnail_Image.jpg" />
       </ion-col>
       <ion-col>
-        <img alt="Silhouette of mountains" src="assets/img/PestaConvo.jpg" />
+        <img class="eventpic" src="assets/img/PestaConvo.jpg" />
       </ion-col>
     </ion-row>
   </ion-grid>
@@ -76,6 +76,6 @@
       margin-bottom: 20px;
     "
   >
-    <img alt="Silhouette of mountains" src="assets/img/EsportClub.jpg" />
+    <img id="clubpic" style="height: 260px" src="assets/img/EsportClub.jpg" />
   </div>
 </ion-content>
