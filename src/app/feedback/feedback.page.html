@@ -1,13 +1,62 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>feedback</ion-title>
+  <ion-toolbar color="dark" style="height: 70px; padding: 10px">
+    <ion-title style="text-align: center">Feedback</ion-title>
+    <ion-buttons slot="start" style="margin-right: -40px">
+      <ion-back-button default-href="#"></ion-back-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">feedback</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content>
+  <div
+    style="
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    "
+  >
+    <ion-card
+      style="
+        border-radius: 20px;
+        padding: 10px;
+        border: 4px solid black;
+        background-color: #fef9f3;
+        width: 90%;
+        max-width: 400px;
+      "
+    >
+      <form [formGroup]="feedbackForm" (ngSubmit)="submitForm()">
+        <ion-card-header>
+          <ion-card-title>Email:</ion-card-title>
+          <ion-card-subtitle>
+            <ion-input
+              formControlName="email"
+              placeholder="Enter valid student email"
+              errorText="Invalid email"
+              ngModel
+              email
+            ></ion-input>
+          </ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-header>
+          <ion-card-title>Message:</ion-card-title>
+          <ion-card-subtitle style="margin-bottom: 10px">
+            <ion-textarea
+              formControlName="message"
+              placeholder="Type something here"
+            ></ion-textarea>
+          </ion-card-subtitle>
+          <ion-button color="tertiary" shape="round" type="submit"
+            >Submit</ion-button
+          >
+        </ion-card-header>
+      </form>
+    </ion-card>
+  </div>
 </ion-content>
+
+<!-- footer -->
+<ion-footer>
+  <ion-toolbar color="dark" style="height: 70px"> </ion-toolbar>
+</ion-footer>
