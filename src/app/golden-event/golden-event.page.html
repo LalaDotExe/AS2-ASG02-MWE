@@ -1,13 +1,54 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>GoldenEvent</ion-title>
+  <ion-toolbar color="dark" style="height: 70px; padding: 10px">
+    <ion-title style="text-align: center">Golden Event</ion-title>
+    <ion-buttons slot="start" style="margin-right: -40px">
+      <ion-back-button default-href="#"></ion-back-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">GoldenEvent</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content>
+  <ion-card style="border-radius: 20px; padding: 0; margin: 20px">
+    <img
+      style="width: 100%; height: 250px; object-fit: cover"
+      src="assets/img/GoldenNight.jpg"
+    />
+  </ion-card>
+  <!-- Event Description -->
+
+  <ion-card
+    style="border-radius: 20px; padding: 5px; margin: 10px; box-shadow: none"
+  >
+    <ion-card-header>
+      <ion-card-title>Event Description</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>Dear PB-ians</p>
+      <br />
+      <p>
+        We are thrilled to announce the commencement of RSVP for our highly
+        anticipated "Golden Night" Appreciation Event to celebrate the
+        achievements of our amazing graduates! Good News, its also open to
+        public!
+      </p>
+      <br />
+      <p>📅 *Date*: October 21st, 2023</p>
+      <p>🕖 *Time*: 7:00 PM - 9:30 PM</p>
+      <p>🏟️ *Venue*: JP Amphitheater</p>
+      <br />
+      <p>For RSVP and more information, please contact:</p>
+      <p>Farah Aliaa - +673 722 2590</p>
+      <p>Farah Bell - +673 822 3452</p>
+      <h2>Endorsed For EP!!</h2>
+      <!-- Join Button -->
+      <ion-button color="dark" shape="round" type="submit"
+        >Full Slot</ion-button
+      >
+    </ion-card-content>
+  </ion-card>
 </ion-content>
+
+<!-- footer -->
+<ion-footer>
+  <ion-toolbar color="dark" style="height: 70px"> </ion-toolbar>
+</ion-footer>
