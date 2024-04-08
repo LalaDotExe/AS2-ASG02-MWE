@@ -79,7 +79,7 @@
               expand="block"
               color="tertiary"
               shape="round"
-              type="submit"
+              id="open-modal"
               >Joined!</ion-button
             ></ion-col
           >
@@ -96,7 +96,33 @@
         </ion-row>
       </ion-grid>
     </ion-card-content>
+
+    <!-- <ion-toolbar>
+          <ion-title>Modal</ion-title>
+          <ion-buttons slot="end">
+            <ion-button color="light" (click)="modal.dismiss()"
+              >Close</ion-button
+            >
+          </ion-buttons>
+        </ion-toolbar> -->
   </ion-card>
+  <ion-modal #modal trigger="open-modal">
+    <ng-template>
+      <ion-card-content style="margin-top: 20px">
+        <ion-card-header>
+          <ion-card-title style="text-align: center; color: white"
+            >You already joined the club!</ion-card-title
+          >
+        </ion-card-header>
+        <ion-button
+          color="warning"
+          (click)="modal.dismiss()"
+          style="margin: 0 auto; display: block; width: 30%"
+          >Ok</ion-button
+        >
+      </ion-card-content>
+    </ng-template>
+  </ion-modal>
 </ion-content>
 
 <!-- footer -->
