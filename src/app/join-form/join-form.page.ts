@@ -1,6 +1,7 @@
 import { Component, ViewChild } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { AlertController } from '@ionic/angular';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-join-form',
@@ -10,7 +11,10 @@ import { AlertController } from '@ionic/angular';
 export class JoinFormPage {
   @ViewChild('joinForm') joinForm: NgForm;
 
-  constructor(private alertController: AlertController) {
+  constructor(
+    private alertController: AlertController,
+    private router: Router
+  ) {
     this.joinForm = {} as NgForm;
   }
 
@@ -23,6 +27,9 @@ export class JoinFormPage {
 
       // Show a popup message
       this.presentAlert();
+
+      // Redirect to esport-event page after clicking OK
+      this.router.navigateByUrl('/esport-event');
     }
   }
 
