@@ -14,7 +14,7 @@ Access EP Quest:
 
 # Usage Instruction
 Dashboard:
-- users will be redirected to their dashboard, where they can view their eo point, club and events.
+- users will be redirected to their dashboard, where they can view their ep point, club and events.
 
 Progress Tracking:
 - Users can track their ep point and clubs or event attendances, through the dashboard.
