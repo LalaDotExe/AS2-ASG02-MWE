@@ -1,0 +1,8 @@
+{
+    "appId": "com.myepquest",
+    "appName": "Ep Quest",
+    "bundledWebRuntime": false,
+    "npmClient": "npm",
+    "webDir": "www",
+    "cordova": {}
+}
