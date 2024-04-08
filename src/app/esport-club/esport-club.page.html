@@ -80,6 +80,7 @@
               color="tertiary"
               shape="round"
               type="submit"
+              id="open-join"
               >Joined!</ion-button
             ></ion-col
           >
@@ -90,7 +91,7 @@
               color="success"
               shape="round"
               type="submit"
-              routerLink="/session-form"
+              id="open-club"
               >Session</ion-button
             ></ion-col
           >
@@ -98,6 +99,51 @@
       </ion-grid>
     </ion-card-content>
   </ion-card>
+  <ion-modal #modal trigger="open-club">
+    <ng-template>
+      <ion-card-content style="margin-top: 20px">
+        <ion-card-header>
+          <ion-card-title style="text-align: center; color: black"
+            >Enter authentication code!</ion-card-title
+          >
+        </ion-card-header>
+        <ion-card-subtitle>
+          <ion-input
+            name="studentId"
+            ngModel
+            required
+            placeholder="7xfaw2"
+          ></ion-input>
+        </ion-card-subtitle>
+        <ion-button
+          color="warning"
+          (click)="modal.dismiss()"
+          style="margin: 0 auto; display: block; width: 30%"
+          routerLink="/session-form"
+          >Verify</ion-button
+        >
+      </ion-card-content>
+    </ng-template>
+  </ion-modal>
+  <!-- modal 2 -->
+  <ion-modal #modal2 trigger="open-join">
+    <ng-template>
+      <ion-card-content style="margin-top: 20px">
+        <ion-card-header>
+          <ion-card-title style="text-align: center; color: white"
+            >You already join this club!</ion-card-title
+          >
+        </ion-card-header>
+
+        <ion-button
+          color="warning"
+          (click)="modal2.dismiss()"
+          style="margin: 0 auto; display: block; width: 30%"
+          >Ok</ion-button
+        >
+      </ion-card-content>
+    </ng-template>
+  </ion-modal>
 </ion-content>
 
 <!-- footer -->
