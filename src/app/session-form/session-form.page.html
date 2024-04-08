@@ -61,15 +61,71 @@
     </ion-card>
     <ion-modal #modal2 trigger="attendance">
       <ng-template>
-        <ion-card-content style="margin-top: 20px">
-          <ion-card-header>
-            <ion-card-title style="text-align: center; color: white"
-              >You already join this club!</ion-card-title
+        <ion-card-content>
+          <div
+            style="
+              display: flex;
+              align-items: center;
+              background-color: #08415c;
+            "
+          >
+            <ion-card-header
+              style="
+                padding: 30px;
+                margin: 0 auto;
+                display: block;
+                border-radius: 20px;
+              "
             >
-          </ion-card-header>
+              <ion-card-title style="text-align: center; color: white"
+                >Thank you for joining!</ion-card-title
+              >
+              <ion-card-title style="text-align: center; color: white"
+                >ESPORT CLUB</ion-card-title
+              >
+              <ion-card-subtitle
+                style="
+                  text-align: center;
+                  color: white;
 
+                  border: none;
+                "
+                >Sign In: 17 Oct 2023 / 03:30 PM</ion-card-subtitle
+              >
+            </ion-card-header>
+          </div>
+          <ion-card-content
+            style="
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+            "
+          >
+            <div style="display: flex; align-items: center">
+              <img
+                src="assets/img/profile3.png"
+                style="width: 60px; height: 60px"
+              />
+              <div
+                style="
+                  display: flex;
+                  flex-direction: column;
+                  align-items: flex-start;
+                  padding-left: 20px;
+                "
+              >
+                <p class="cardtitle">Dato Akmallala Bin Roslan</p>
+                <p class="cardsub">22ftt1203</p>
+                <p class="cardsub">DWDT08</p>
+              </div>
+            </div>
+          </ion-card-content>
+          <ion-card-subtitle
+            style="text-align: center; color: black; margin-bottom: 30px"
+            >You earned 4 EP points</ion-card-subtitle
+          >
           <ion-button
-            color="warning"
+            color="tertiary"
             (click)="modal2.dismiss()"
             style="margin: 0 auto; display: block; width: 30%"
             routerLink="/tabs/tab1"
