@@ -66,8 +66,10 @@ We appreciate your interest in contributing to EP Quest! Your contributions help
     "cordova": {}
 }
 7. run ionic capacitor copy android
-8. run npx cap open android
-9. This will open android studio
-10. Click on the run to view the app on phone
+8. run ionic cap add android
+9. run ionic cap copy then ionic cap sync
+10. run npx cap open android
+11. This will open android studio
+12. Click on the run to view the app on phone
 
 
