@@ -1,75 +1,53 @@
-<ion-content>
-  <div
-    style="
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100%;
-      background-image: url(assets/img/frameBG.png);
-      background-size: cover;
-    "
-  >
-    <ion-card
-      style="
-        border-radius: 20px;
-        padding: 10px;
-        border: 4px solid black;
-        background-color: #fef9f3;
-        width: 90%;
-        max-width: 400px;
-      "
-    >
-      <!-- #joinForm="ngForm" (ngSubmit)="submitForm(joinForm)" -->
-      <form>
-        <h1 style="text-align: center">Esport Event</h1>
-        <ion-card-header>
-          <ion-card-title>Student ID</ion-card-title>
-          <ion-card-subtitle>
+<ion-content class="ion-padding">
+  <div class="container">
+    <ion-card class="form-card">
+      <ion-card-header>
+        <ion-card-title>Join Form</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <form>
+          <h1 class="form-heading">Esport Event</h1>
+          <ion-item>
+            <ion-label position="stacked">Student ID</ion-label>
             <ion-input
               name="studentId"
               ngModel
               required
               placeholder="Enter valid student ID"
             ></ion-input>
-          </ion-card-subtitle>
-        </ion-card-header>
-        <ion-card-header>
-          <ion-card-title>Full Name</ion-card-title>
-          <ion-card-subtitle>
+          </ion-item>
+          <ion-item>
+            <ion-label position="stacked">Full Name</ion-label>
             <ion-input
               name="fullName"
               ngModel
               required
               placeholder="Enter full name"
             ></ion-input>
-          </ion-card-subtitle>
-        </ion-card-header>
-        <ion-card-header>
-          <ion-card-title>Group Code</ion-card-title>
-          <ion-card-subtitle>
+          </ion-item>
+          <ion-item>
+            <ion-label position="stacked">Group Code</ion-label>
             <ion-input
               name="groupCode"
               ngModel
               required
               placeholder="Enter group code"
             ></ion-input>
-          </ion-card-subtitle>
-        </ion-card-header>
-        <ion-card-header>
-          <ion-card-title>Contact No</ion-card-title>
-          <ion-card-subtitle>
+          </ion-item>
+          <ion-item>
+            <ion-label position="stacked">Contact No</ion-label>
             <ion-input
               name="contactNo"
               ngModel
               required
               placeholder="Enter contact number"
             ></ion-input>
-          </ion-card-subtitle>
-        </ion-card-header>
-        <ion-button color="tertiary" shape="round" type="submit"
-          >Join</ion-button
-        >
-      </form>
+          </ion-item>
+          <ion-button color="tertiary" expand="block" type="submit">
+            Join
+          </ion-button>
+        </form>
+      </ion-card-content>
     </ion-card>
   </div>
 </ion-content>
