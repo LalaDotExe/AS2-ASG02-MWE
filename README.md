@@ -52,26 +52,23 @@ Feedback Mechanism:
 We appreciate your interest in contributing to EP Quest! Your contributions help make EP Quest a valuable tool for students worldwide.
 
 # Deployment for android studio step:
-1. First go to terminal and run cd EPQUEST
-2. Afterthat run ng build
-3. run ionic capacitor add android
-4. run code .
-5. inside the file add capacitor.config.json
-6. inside the newly created file: {
+1. Open your terminal
+2. Navigate to the EPQUEST directory by running: `cd EPQUEST`
+3. Add Android platform to your project with Capacitor by running: `ionic capacitor add android`
+4. Open your code editor by running: `code .`
+5. Inside the opened file, add a capacitor.config.json file with the following content: `{
     "appId": "com.myepquest",
     "appName": "Ep Quest",
     "bundledWebRuntime": false,
     "npmClient": "npm",
     "webDir": "www",
     "cordova": {}
-}
-7. run ionic capacitor copy android
-8. run ionic cap add android
-9. run ionic cap copy then ionic cap sync
-10. run npx cap open android
-11. This will open android studio
-12. Click on the run to view the app on phone
-
-
+}`
+6. Copy your web assets to the Android project by running: `ionic capacitor copy android`
+7. Add Android platform to your Capacitor project by running: `ionic cap add android`
+8. Copy your web assets and update native projects by running: `ionic cap copy`
+9. Sync your Capacitor project with the native Android project by running: `ionic cap sync`
+10. Open Android Studio by running: `npx cap open android`
+11. In Android Studio, click on the "Run" button to deploy and view your app on a connected device or emulator.
 
 ![Screenshot 2024-04-08 231913](https://github.com/LalaDotExe/AS2-ASG02-MWE/assets/157432322/f9d9496c-c840-4b02-81d5-4624161999e4)
