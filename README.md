@@ -73,3 +73,5 @@ We appreciate your interest in contributing to EP Quest! Your contributions help
 12. Click on the run to view the app on phone
 
 
+
+![Screenshot 2024-04-08 231913](https://github.com/LalaDotExe/AS2-ASG02-MWE/assets/157432322/f9d9496c-c840-4b02-81d5-4624161999e4)
